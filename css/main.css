@@ -1,0 +1,39 @@
+nav {
+  display: flex;
+  width: 100%;
+  padding: 0.5%;
+  margin: 2% 0 5% 0;
+}
+nav ul {
+  margin: 0;
+  width: 40%;
+  display: flex;
+  list-style-type: none;
+  text-transform: uppercase;
+  justify-content: flex-end;
+  flex: 2 1 60px;
+}
+nav ul li {
+  margin-right: 5%;
+}
+nav a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+nav .logo {
+  color: #F5C536;
+  font-family: "coolvetica";
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,30 @@
+
+nav {
+    display: flex;
+    width: 100%;
+    padding: 0.5%;
+    margin: 2% 0 5% 0;
+    ul{
+        margin: 0;
+        width: 40%;
+        display:flex;
+        list-style-type: none;
+        text-transform: uppercase;
+        justify-content: flex-end;
+        flex:2 1 60px;
+        li{
+            margin-right: 5%;
+            
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $secondaryColor;
+    }
+    .logo{
+        color : $mainColor;
+        font-family: "coolvetica";
+        font-size: $fontSize + 6;
+        letter-spacing: 2px;
+    }
+}

@@ -1,0 +1,13 @@
+@import 'sass/helpers/variables';
+@import 'sass/helpers/fonts';
+@import 'sass/layout/_header.scss';
+
+body{
+    background-color: $backgroundColor;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    
+}

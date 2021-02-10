@@ -11,3 +11,42 @@ main{
     margin: 0 auto;
     
 }
+
+.lead{
+    margin: 5% 0;
+    .images{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        img{
+            max-width: 40%;
+            width: 30%;
+        }
+    }
+
+    .intro{
+        width: 30%;
+        position: absolute;
+        top: 25%;
+        left: 35%;
+        h1{
+            margin-bottom: 7%;
+            color: #ffcc29;
+            letter-spacing: 2px;
+            font-family: Georgia, 'Times New Roman', Times, serif
+        }
+        p{
+            line-height: 2;
+        }
+    }
+    
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    .card{
+        width: 40%;
+        padding: 1%;
+    }
+}

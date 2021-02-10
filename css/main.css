@@ -36,4 +36,41 @@ main {
   margin: 0 auto;
 }
 
+.lead {
+  margin: 5% 0;
+}
+.lead .images {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.lead .images img {
+  max-width: 40%;
+  width: 30%;
+}
+.lead .intro {
+  width: 30%;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+.lead .intro h1 {
+  margin-bottom: 7%;
+  color: #ffcc29;
+  letter-spacing: 2px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.lead .intro p {
+  line-height: 2;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards .card {
+  width: 40%;
+  padding: 1%;
+}
+
 /*# sourceMappingURL=main.css.map */

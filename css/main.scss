@@ -45,8 +45,37 @@ main{
 .cards{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     .card{
         width: 40%;
-        padding: 1%;
+        margin: 3%;
+        @for $i from 1 through $nbImages
+        {
+            .image#{$i}{
+                width: 100%;
+                height: 300px;
+                background-image: url('../images/villa#{$i}.jpg');
+                background-size: cover;
+            }
+        }
+        
+    }
+
+    .break{
+        flex-basis: 100%;
+        height: 0;
+    }
+
+    .btnMore{
+        border: none;
+       width: 10%;
+       margin: 5% auto;
+       padding: 1%;
+       background-color: $mainColor;
+       color: $fontColor;
+       &:hover{
+        background-color: $fontColor;
+        color: $mainColor;
+       }
     }
 }

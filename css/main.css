@@ -67,10 +67,51 @@ main {
 .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .cards .card {
   width: 40%;
+  margin: 3%;
+}
+.cards .card .image1 {
+  width: 100%;
+  height: 300px;
+  background-image: url("../images/villa1.jpg");
+  background-size: cover;
+}
+.cards .card .image2 {
+  width: 100%;
+  height: 300px;
+  background-image: url("../images/villa2.jpg");
+  background-size: cover;
+}
+.cards .card .image3 {
+  width: 100%;
+  height: 300px;
+  background-image: url("../images/villa3.jpg");
+  background-size: cover;
+}
+.cards .card .image4 {
+  width: 100%;
+  height: 300px;
+  background-image: url("../images/villa4.jpg");
+  background-size: cover;
+}
+.cards .break {
+  flex-basis: 100%;
+  height: 0;
+}
+.cards .btnMore {
+  border: none;
+  width: 10%;
+  margin: 5% auto;
   padding: 1%;
+  background-color: #F5C536;
+  color: #403F45;
+}
+.cards .btnMore:hover {
+  background-color: #403F45;
+  color: #F5C536;
 }
 
 /*# sourceMappingURL=main.css.map */

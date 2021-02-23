@@ -27,6 +27,10 @@ nav .logo {
   letter-spacing: 2px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f3f3f3;
 }
@@ -108,14 +112,10 @@ main {
 .cards .card p {
   color: #403f45;
 }
-.cards .break {
-  flex-basis: 100%;
-  height: 0;
-}
 .cards .btnMore {
   border: none;
   width: 10%;
-  margin: 5% auto;
+  margin: 1% auto 5%;
   padding: 1%;
   background-color: #f5c536;
   color: #403f45;
@@ -123,6 +123,11 @@ main {
 .cards .btnMore:hover {
   background-color: #403f45;
   color: #f5c536;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
 
 #about-us article:nth-child(2) {
@@ -146,6 +151,38 @@ main {
 }
 #about-us p {
   font-size: 18px;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.testimonials h2 {
+  width: 25%;
+  margin: 1% auto;
+  color: #4a4a4a;
+}
+.testimonials article {
+  padding: 1%;
+  margin: 1% 5%;
+  flex: 1 0 10%;
+}
+.testimonials article .client img {
+  display: block;
+  max-width: 80%;
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid #f5c536;
+  border-radius: 50%;
+  padding: 2%;
+}
+.testimonials article .testimonials-name {
+  font-weight: bold;
+  display: inline-block;
+  width: 50%;
+  margin: 0 auto;
+  color: #403f45;
 }
 
 /*# sourceMappingURL=main.css.map */

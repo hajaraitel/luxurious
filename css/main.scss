@@ -1,5 +1,6 @@
 @import "sass/helpers/variables";
 @import "sass/helpers/fonts";
+@import "sass/helpers/mixins";
 @import "sass/layout/_header.scss";
 
 * {
@@ -147,6 +148,29 @@ main {
       width: 50%;
       margin: 0 auto;
       color: $fontColor;
+    }
+  }
+}
+
+footer {
+  margin: 3% 0;
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    h2 {
+      text-transform: uppercase;
+      font-size: $fontSize + 2;
+    }
+    article {
+      li {
+        list-style-type: none;
+      }
+    }
+    .socials {
+      .logo {
+        @include logo;
+      }
     }
   }
 }

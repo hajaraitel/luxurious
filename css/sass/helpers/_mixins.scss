@@ -1,0 +1,7 @@
+@mixin logo {
+  color: $mainColor;
+  font-family: "coolvetica";
+  font-size: $fontSize + 6;
+  letter-spacing: 2px;
+  text-decoration: none;
+}

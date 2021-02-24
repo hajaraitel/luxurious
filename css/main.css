@@ -25,6 +25,7 @@ nav .logo {
   font-family: "coolvetica";
   font-size: 20px;
   letter-spacing: 2px;
+  text-decoration: none;
 }
 
 * {
@@ -183,6 +184,29 @@ main {
   width: 50%;
   margin: 0 auto;
   color: #403f45;
+}
+
+footer {
+  margin: 3% 0;
+}
+footer section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer section h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+footer section article li {
+  list-style-type: none;
+}
+footer section .socials .logo {
+  color: #f5c536;
+  font-family: "coolvetica";
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

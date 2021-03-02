@@ -1,7 +1,15 @@
 @mixin logo {
   color: $mainColor;
   font-family: "coolvetica";
-  font-size: $fontSize + 6;
+  font-size: $fontSize + 40;
   letter-spacing: 2px;
   text-decoration: none;
+  font-family: "Logo";
+}
+
+@mixin fonts($family, $path, $name) {
+  @font-face {
+    font-family: $family;
+    src: url("#{$path}#{$name}");
+  }
 }

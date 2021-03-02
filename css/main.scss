@@ -3,6 +3,8 @@
 @import "sass/helpers/mixins";
 @import "sass/layout/_header.scss";
 
+@include fonts("Main", $fontPath, $mainFont);
+
 * {
   box-sizing: border-box;
 }
@@ -13,6 +15,7 @@ body {
 main {
   width: 80%;
   margin: 0 auto;
+  font-family: "Main";
 }
 
 .lead {
@@ -36,7 +39,7 @@ main {
       margin-bottom: 7%;
       color: $mainColor; //#ffcc29;
       letter-spacing: 2px;
-      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: $fontSize + 10;
     }
     p {
       line-height: 2;
@@ -55,7 +58,7 @@ main {
       .image#{$i} {
         width: 100%;
         height: 300px;
-        background-image: url("#{$ImagesPath}villa#{$i}.jpg");
+        background-image: url("#{$imagesPath}villa#{$i}.jpg");
         background-size: cover;
       }
     }
@@ -104,7 +107,7 @@ main {
   }
   h2,
   p {
-    color: $SecondaryFontColor;
+    color: $secondaryFontColor;
   }
   h1,
   h2,

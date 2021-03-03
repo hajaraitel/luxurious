@@ -2,7 +2,11 @@
 @import "sass/helpers/fonts";
 @import "sass/helpers/mixins";
 @import "sass/layout/_header.scss";
-
+@import "sass/font-awesome/fontawesome.scss";
+@import "sass/font-awesome/regular.scss";
+@import "sass/font-awesome/solid.scss";
+@import "sass/font-awesome/brands.scss";
+@import "sass/font-awesome/v4-shims.scss";
 @include fonts("Main", $fontPath, $mainFont);
 
 * {

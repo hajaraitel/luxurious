@@ -1,209 +1,22 @@
+/*importing files*/
+
 @import "sass/helpers/variables";
-@import "sass/helpers/fonts";
 @import "sass/helpers/mixins";
+@import "sass/components/buttons";
+@import "sass/helpers/fonts";
 @import "sass/layout/_header.scss";
+@import "sass/layout/_grid.scss";
+/* font-awsome icons*/
 @import "sass/font-awesome/fontawesome.scss";
 @import "sass/font-awesome/regular.scss";
 @import "sass/font-awesome/solid.scss";
 @import "sass/font-awesome/brands.scss";
 @import "sass/font-awesome/v4-shims.scss";
+/* -------- */
+@import "sass/pages/homepage.scss";
+@import "sass/layout/_footer.scss";
 @include fonts("Main", $fontPath, $mainFont);
 
-* {
-  box-sizing: border-box;
-}
-body {
-  background-color: $backgroundColor;
-}
 
-main {
-  width: 80%;
-  margin: 0 auto;
-  font-family: "Main";
-}
 
-.lead {
-  margin: 5% 0;
-  .images {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    img {
-      max-width: 40%;
-      width: 30%;
-    }
-  }
 
-  .intro {
-    width: 30%;
-    position: absolute;
-    top: 25%;
-    left: 35%;
-    h1 {
-      margin-bottom: 7%;
-      color: $mainColor; //#ffcc29;
-      letter-spacing: 2px;
-      font-size: $fontSize + 10;
-    }
-    p {
-      line-height: 2;
-    }
-  }
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  .card {
-    width: 40%;
-    margin: 3%;
-    @for $i from 1 through $nbImages {
-      .image#{$i} {
-        width: 100%;
-        height: 300px;
-        background-image: url("#{$imagesPath}villa#{$i}.jpg");
-        background-size: cover;
-      }
-    }
-    a {
-      text-decoration: none;
-      color: $mainColor;
-      font-weight: bold;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-    p {
-      color: $fontColor;
-    }
-  }
-
-  .btnMore {
-    border: none;
-    width: 10%;
-    margin: 1% auto 5%;
-    padding: 1%;
-    background-color: $mainColor;
-    color: $fontColor;
-    &:hover {
-      background-color: $fontColor;
-      color: $mainColor;
-    }
-  }
-}
-
-.break {
-  flex-basis: 100%;
-  height: 0;
-}
-
-#about-us {
-  article:nth-child(2) {
-    display: flex;
-    p {
-      text-align: left;
-    }
-  }
-  h1,
-  h3 {
-    color: $fontColor;
-  }
-  h2,
-  p {
-    color: $secondaryFontColor;
-  }
-  h1,
-  h2,
-  h3 {
-    font-size: $fontSize + 8;
-  }
-  p {
-    font-size: $fontSize + 4;
-  }
-}
-
-.testimonials {
-  //border: 1px solid red;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  h2 {
-    width: 25%;
-    margin: 1% auto;
-    color: $secondaryColor;
-  }
-  article {
-    padding: 1%;
-    margin: 1% 5%;
-    flex: 1 0 10%;
-    .client {
-      img {
-        display: block;
-        max-width: 80%;
-        width: 60%;
-        margin: 0 auto;
-        border: 1px solid $mainColor;
-        border-radius: 50%;
-        padding: 2%;
-      }
-    }
-
-    .testimonials-name {
-      font-weight: bold;
-      display: inline-block;
-      width: 50%;
-      margin: 0 auto;
-      color: $fontColor;
-    }
-  }
-}
-
-footer {
-  margin: 3% 0;
-  padding: 2%;
-  section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    h2 {
-      text-transform: uppercase;
-      font-size: $fontSize + 2;
-    }
-    article {
-      li {
-        list-style-type: none;
-      }
-    }
-    .socials {
-      .logo {
-        @include logo;
-      }
-      ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-      ul li:first-of-type {
-        width: 100%;
-        margin-bottom: 3%;
-      }
-    }
-  }
-  .newsletter {
-    input[type="email"] {
-      border: none;
-      padding: 3%;
-      text-indent: 5%;
-      width: 100%;
-      height: 35px;
-      border-radius: 5px;
-    }
-  }
-
-  .copy-right {
-    float: right;
-    color: lightslategray;
-  }
-}

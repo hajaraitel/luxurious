@@ -1,0 +1,68 @@
+footer {
+  margin: 3% 0;
+  padding: 2%;
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    h2 {
+      text-transform: uppercase;
+      font-size: $fontSize + 2;
+    }
+    article {
+      li {
+        list-style-type: none;
+      }
+    }
+    .socials {
+      .logo {
+        @include logo;
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      ul li:first-of-type {
+        width: 100%;
+        margin-bottom: 3%;
+      }
+    }
+  }
+  .newsletter {
+    form {
+      button {
+        width: 20%;
+        height: 30px;
+        margin: 1%;
+        border: 1px solid $mainColor;
+        border-radius: 3px;
+        cursor: pointer;
+        i {
+          color: $mainColor;
+          font-size: $fontSize;
+        }
+        &:hover {
+          border: 1px solid $fontColor;
+          i {
+            color: $fontColor;
+          }
+        }
+      }
+    }
+    input[type="email"] {
+      border: none;
+      padding: 3%;
+      text-indent: 5%;
+      width: 70%;
+      height: 35px;
+      border-radius: 5px;
+    }
+  }
+
+  .copy-right {
+    float: right;
+    color: lightslategray;
+  }
+}

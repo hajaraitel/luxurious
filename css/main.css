@@ -1,5 +1,22 @@
 @charset "UTF-8";
 /*importing files*/
+/*$maxMobile: 767px;
+$maxTablet: 1023px;
+$maxDesktop: 1024px;
+$minMobile: 640px;
+$minTablet: 768px;
+$minDesktop: 992px;*/
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*
+@mixin minMedium {
+  @media (min-width: 992px) {
+    @content;
+  }
+}*/
 @font-face {
   font-family: "Logo";
   src: url("../fonts/AuthenticSignature.ttf");

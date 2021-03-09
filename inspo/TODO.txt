@@ -1,3 +1,8 @@
 --https://colorhunt.co/palette/67816
 --https://hookagency.com/web-design-color-palettes/
-change font of the logo
+
+--hover on nav change color
+--prefixes for other browsers
+--change color variable names
+--add one animation to the buttons
+

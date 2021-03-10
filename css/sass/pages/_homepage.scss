@@ -1,16 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-body {
-  background-color: $backgroundColor;
-}
-
-main {
-  width: 80%;
-  margin: 0 auto;
-  font-family: "Main";
-}
-
 .lead {
   margin: 5% 0;
   .images {
@@ -56,7 +43,6 @@ main {
       }
     }
     a {
-      text-decoration: none;
       color: $mainColor;
       font-weight: bold;
       &:hover {
@@ -152,9 +138,6 @@ main {
 
     .testimonials-name {
       font-weight: bold;
-      /*display: inline-block;
-        width: 50%;
-        margin: 0 auto;*/
       color: $fontColor;
     }
   }

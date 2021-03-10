@@ -9,11 +9,6 @@ footer {
       text-transform: uppercase;
       font-size: $fontSize + 2;
     }
-    article {
-      li {
-        list-style-type: none;
-      }
-    }
     .socials {
       .logo {
         @include logo;

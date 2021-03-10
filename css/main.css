@@ -17,21 +17,25 @@ $minDesktop: 992px;*/
     @content;
   }
 }*/
-@font-face {
-  font-family: "Logo";
-  src: url("../fonts/AuthenticSignature.ttf");
+.ul-unstyled {
+  list-style-type: none;
+  padding: 0;
 }
+
+.link-unstyled {
+  text-decoration: none;
+}
+
 nav {
   display: flex;
   width: 100%;
   padding: 0.5%;
-  margin: 2% 0 5% 0;
+  margin: 5% 0 5% 0;
 }
 nav ul {
   margin: 0;
   width: 40%;
   display: flex;
-  list-style-type: none;
   text-transform: uppercase;
   justify-content: flex-end;
   flex: 2 1 60px;
@@ -40,7 +44,6 @@ nav ul li {
   margin-right: 5%;
 }
 nav a {
-  text-decoration: none;
   color: #4a4a4a;
 }
 nav .logo {
@@ -48,8 +51,21 @@ nav .logo {
   font-family: "coolvetica";
   font-size: 54px;
   letter-spacing: 2px;
-  text-decoration: none;
   font-family: "Logo";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: "Main";
 }
 
 /* font-awsome icons*/
@@ -8958,20 +8974,6 @@ readers do not read off random characters that represent icons */
 }
 
 /* -------- */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #f3f3f3;
-}
-
-main {
-  width: 80%;
-  margin: 0 auto;
-  font-family: "Main";
-}
-
 .lead {
   margin: 5% 0;
 }
@@ -9034,7 +9036,6 @@ main {
   background-size: cover;
 }
 .cards .card a {
-  text-decoration: none;
   color: #f5c536;
   font-weight: bold;
 }
@@ -9122,9 +9123,6 @@ main {
 }
 .testimonials article .testimonials-name {
   font-weight: bold;
-  /*display: inline-block;
-    width: 50%;
-    margin: 0 auto;*/
   color: #403f45;
 }
 
@@ -9141,15 +9139,11 @@ footer section h2 {
   text-transform: uppercase;
   font-size: 16px;
 }
-footer section article li {
-  list-style-type: none;
-}
 footer section .socials .logo {
   color: #f5c536;
   font-family: "coolvetica";
   font-size: 54px;
   letter-spacing: 2px;
-  text-decoration: none;
   font-family: "Logo";
 }
 footer section .socials ul {
@@ -9193,9 +9187,14 @@ footer .copy-right {
   color: lightslategray;
 }
 
+/*Website fonts*/
 @font-face {
   font-family: "Main";
   src: url("../fonts/Louis_George_Cafe.ttf");
+}
+@font-face {
+  font-family: "Logo";
+  src: url("../fonts/AuthenticSignature.ttf");
 }
 
 /*# sourceMappingURL=main.css.map */

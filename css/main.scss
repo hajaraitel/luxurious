@@ -4,8 +4,10 @@
 @import "sass/helpers/mixins";
 @import "sass/components/buttons";
 @import "sass/helpers/fonts";
+@import "sass/helpers/classes";
 @import "sass/layout/_header.scss";
 @import "sass/layout/_grid.scss";
+@import "sass/pages/_globalpage.scss";
 /* font-awsome icons*/
 @import "sass/font-awesome/fontawesome.scss";
 @import "sass/font-awesome/regular.scss";
@@ -15,8 +17,6 @@
 /* -------- */
 @import "sass/pages/homepage.scss";
 @import "sass/layout/_footer.scss";
+/*Website fonts*/
 @include fonts("Main", $fontPath, $mainFont);
-
-
-
-
+@include fonts("Logo", $fontPath, $logoFont);

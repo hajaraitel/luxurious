@@ -1,8 +1,9 @@
 --https://colorhunt.co/palette/67816
 --https://hookagency.com/web-design-color-palettes/
 
---hover on nav change color
+
 --prefixes for other browsers
 --change color variable names
 --add one animation to the buttons
+--add up and down btns
 

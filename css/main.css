@@ -46,6 +46,9 @@ nav ul li {
 nav a {
   color: #4a4a4a;
 }
+nav a:hover {
+  color: #f5c536;
+}
 nav .logo {
   color: #f5c536;
   font-family: "coolvetica";
@@ -9002,50 +9005,51 @@ readers do not read off random characters that represent icons */
   line-height: 2;
 }
 
-.cards {
+.cards .container {
+  margin-top: 3%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.cards .card {
+.cards .container .card {
   width: 40%;
   margin: 3%;
 }
-.cards .card .image1 {
+.cards .container .card .image1 {
   width: 100%;
   height: 300px;
   background-image: url("../images/villa1.jpg");
   background-size: cover;
 }
-.cards .card .image2 {
+.cards .container .card .image2 {
   width: 100%;
   height: 300px;
   background-image: url("../images/villa2.jpg");
   background-size: cover;
 }
-.cards .card .image3 {
+.cards .container .card .image3 {
   width: 100%;
   height: 300px;
   background-image: url("../images/villa3.jpg");
   background-size: cover;
 }
-.cards .card .image4 {
+.cards .container .card .image4 {
   width: 100%;
   height: 300px;
   background-image: url("../images/villa4.jpg");
   background-size: cover;
 }
-.cards .card a {
+.cards .container .card a {
   color: #f5c536;
   font-weight: bold;
 }
-.cards .card a:hover {
+.cards .container .card a:hover {
   text-decoration: underline;
 }
-.cards .card p {
+.cards .container .card p {
   color: #403f45;
 }
-.cards .btnMore {
+.cards .container .btnMore {
   border: none;
   width: 10%;
   margin: 1% auto 5%;
@@ -9053,7 +9057,7 @@ readers do not read off random characters that represent icons */
   background-color: #f5c536;
   color: #403f45;
 }
-.cards .btnMore:hover {
+.cards .container .btnMore:hover {
   background-color: #403f45;
   color: #f5c536;
 }
@@ -9063,65 +9067,70 @@ readers do not read off random characters that represent icons */
   height: 0;
 }
 
-#about-us article:nth-child(2) {
+#about-us .container article:nth-child(2) {
   display: flex;
 }
-#about-us article:nth-child(2) p {
+#about-us .container article:nth-child(2) p {
   text-align: left;
 }
-#about-us h1,
-#about-us h3 {
+#about-us .container article:nth-child(2) .reasons-why {
+  margin: 0 3%;
+}
+#about-us .container h1,
+#about-us .container h3 {
   color: #403f45;
 }
-#about-us h2,
-#about-us p {
+#about-us .container h2,
+#about-us .container p {
   color: #868491;
 }
-#about-us h1,
-#about-us h2,
-#about-us h3 {
+#about-us .container h1,
+#about-us .container h2,
+#about-us .container h3 {
   font-size: 22px;
 }
-#about-us p {
+#about-us .container p {
   font-size: 18px;
 }
 
-.testimonials {
+.testimonials .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.testimonials h2 {
-  width: 25%;
+.testimonials .container h2 {
+  width: 15%;
   margin: 1% auto;
   color: #4a4a4a;
 }
-.testimonials article {
+.testimonials .container article {
+  width: 45%;
+  margin: 0;
   padding: 1%;
-  margin: 1% 5%;
+  margin: 2% 3%;
   flex: 1 0 10%;
   text-align: center;
 }
-.testimonials article p {
+.testimonials .container article p {
   text-align: justify;
 }
-.testimonials article .quote {
+.testimonials .container article .quote {
   display: inline-block;
   margin: 5% 0;
 }
-.testimonials article .quote i {
+.testimonials .container article .quote i {
   color: #f5c536;
 }
-.testimonials article .client img {
+.testimonials .container article .client img {
   display: block;
-  max-width: 80%;
-  width: 60%;
+  max-width: 50%;
+  width: 40%;
   margin: 0 auto;
   border: 1px solid #f5c536;
   border-radius: 50%;
   padding: 2%;
 }
-.testimonials article .testimonials-name {
+.testimonials .container article .testimonials-name {
   font-weight: bold;
   color: #403f45;
 }
@@ -9155,6 +9164,19 @@ footer section .socials ul {
 footer section .socials ul li:first-of-type {
   width: 100%;
   margin-bottom: 3%;
+}
+footer section .socials li i:hover {
+  cursor: pointer;
+  font-size: 19px;
+}
+footer section .socials li .fa-facebook:hover {
+  color: #3B5998;
+}
+footer section .socials li .fa-twitter:hover {
+  color: #1DA1F2;
+}
+footer section .socials li .fa-instagram:hover {
+  color: #8a3ab9;
 }
 footer .newsletter form button {
   width: 20%;

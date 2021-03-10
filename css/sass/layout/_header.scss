@@ -12,10 +12,14 @@ nav {
     flex: 2 1 60px;
     li {
       margin-right: 5%;
+      
     }
   }
   a {
     color: $secondaryColor;
+    &:hover{
+      color: $mainColor;
+    }
   }
   .logo {
     @include logo;

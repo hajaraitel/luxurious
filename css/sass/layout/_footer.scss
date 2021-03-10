@@ -23,6 +23,31 @@ footer {
         width: 100%;
         margin-bottom: 3%;
       }
+      li{
+        i{
+          &:hover{
+            cursor: pointer;
+            font-size: $fontSize+5;
+          }
+          
+        }
+        .fa-facebook{
+          &:hover{
+            color:#3B5998;
+          }
+        }
+        .fa-twitter{
+          &:hover{
+            color:#1DA1F2;
+          }
+        }
+        .fa-instagram{
+          &:hover{
+            color:#8a3ab9;
+          }
+        }      
+        
+      }
     }
   }
   .newsletter {

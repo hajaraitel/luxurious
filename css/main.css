@@ -64,6 +64,7 @@ nav .logo {
 .container {
   width: 80%;
   margin: 0 auto;
+  position: relative;
 }
 
 body {
@@ -9099,7 +9100,7 @@ readers do not read off random characters that represent icons */
   flex-wrap: wrap;
 }
 .testimonials .container h2 {
-  width: 15%;
+  width: 25%;
   margin: 1% auto;
   color: #4a4a4a;
 }

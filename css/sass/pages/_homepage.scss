@@ -28,7 +28,7 @@
 }
 
 .cards {
-  .container{
+  .container {
     margin-top: 3%;
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +55,7 @@
         color: $fontColor;
       }
     }
-  
+
     .btnMore {
       border: none;
       width: 10%;
@@ -69,7 +69,6 @@
       }
     }
   }
-
 }
 
 .break {
@@ -78,13 +77,13 @@
 }
 
 #about-us {
-  .container{
+  .container {
     article:nth-child(2) {
       display: flex;
       p {
         text-align: left;
       }
-      .reasons-why{
+      .reasons-why {
         margin: 0 3%;
       }
     }
@@ -105,17 +104,15 @@
       font-size: $fontSize + 4;
     }
   }
-
 }
 
-
 .testimonials {
-  .container{
+  .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     h2 {
-      width: 15%;
+      width: 25%;
       margin: 1% auto;
       color: $secondaryColor;
     }
@@ -126,7 +123,7 @@
       margin: 2% 3%;
       flex: 1 0 10%;
       text-align: center;
-  
+
       p {
         text-align: justify;
       }
@@ -138,7 +135,6 @@
         }
       }
       .client {
-       
         img {
           display: block;
           max-width: 50%;
@@ -149,12 +145,11 @@
           padding: 2%;
         }
       }
-  
+
       .testimonials-name {
         font-weight: bold;
         color: $fontColor;
       }
     }
   }
-  
 }

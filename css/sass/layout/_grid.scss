@@ -1,8 +1,20 @@
 * {
   box-sizing: border-box;
 }
+
 .container {
-  width: 80%;
   margin: 0 auto;
   position: relative;
+
+  @media #{$sDevices} {
+    width: 70%;
+  }
+
+  @media #{$mDevices} {
+    width: 80%;
+  }
+
+  @media #{$lDevices} {
+    width: 90%;
+  }
 }

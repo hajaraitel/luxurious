@@ -6,4 +6,3 @@
 --change color variable names
 --add one animation to the buttons
 --add up and down btns
---fix the img size (#15 - Create Lorem Ipsum Section)

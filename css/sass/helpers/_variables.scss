@@ -10,14 +10,8 @@ $fontPath: "../fonts/";
 $logoFont: "AuthenticSignature.ttf";
 $mainFont: "Louis_George_Cafe.ttf";
 $fa-font-path: "../fonts/webfonts";
+
 //MediaQuery variables
-/*$maxMobile: 767px;
-$maxTablet: 1023px;
-$maxDesktop: 1024px;
-$minMobile: 640px;
-$minTablet: 768px;
-$minDesktop: 992px;*/
-//$var : "(max-width:55px)";
 /* Extra small devices (phones, 600px and down) */
 $xsDevices: "only screen and (max-width: 600px)";
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -27,5 +21,5 @@ $mDevices: "only screen and (min-width: 768px)";
 /* Large devices (laptops/desktops, 992px and up) */
 $lDevices: "only screen and (min-width: 992px)";
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-$xldevices: "only screen and (min-width: 1200px)";
+$xlDevices: "only screen and (min-width: 1200px)";
 // //#e6ce1d//#fdec00;

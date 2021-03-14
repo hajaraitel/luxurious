@@ -6,3 +6,4 @@
 --change color variable names
 --add one animation to the buttons
 --add up and down btns
+--corriger break point !!!!

@@ -1,27 +1,40 @@
 nav {
-  display: flex;
   width: 100%;
   padding: 0.5%;
   margin: 5% 0 5% 0;
+  @media #{$sDevices} {
+    display: block;
+  }
+  @media #{$mDevices} {
+    display: flex;
+  }
   ul {
     margin: 0;
-    width: 40%;
+    width: 70%;
     display: flex;
     text-transform: uppercase;
     justify-content: flex-end;
     flex: 2 1 60px;
     li {
       margin-right: 5%;
-      
     }
   }
   a {
     color: $secondaryColor;
-    &:hover{
+    &:hover {
       color: $mainColor;
     }
   }
   .logo {
     @include logo;
+    @media #{$sDevices} {
+      width: 100%;
+      text-align: center;
+      display: block;
+    }
+    @media #{$mDevices} {
+      text-align: left;
+      width: 30%;
+    }
   }
 }

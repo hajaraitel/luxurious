@@ -18,6 +18,12 @@ nav {
     li {
       margin-right: 5%;
     }
+    @media #{$mDevices} {
+      margin-top: 3%;
+    }
+    @media #{$lDevices} {
+      margin-top: $fontSize;
+    }
   }
   a {
     color: $secondaryColor;

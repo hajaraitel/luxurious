@@ -1,13 +1,22 @@
 .toggler {
   background-color: $mainColor;
   border: none;
+  //padding: 1px 5px;
+  cursor: pointer;
+  height: 40px;
+  display: none;
+  margin-top: 3px;
+  float: right;
+  @media #{$xsDevices} {
+    display: block;
+  }
   span {
     display: block;
     width: 50px;
     height: 4px;
     background-color: #fff;
     &:not(:last-child) {
-      margin-bottom: 1%;
+      margin-bottom: 3px;
     }
   }
 }

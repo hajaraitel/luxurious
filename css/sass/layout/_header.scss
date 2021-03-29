@@ -8,6 +8,7 @@ nav {
   @media #{$mDevices} {
     display: flex;
   }
+
   ul {
     margin: 0;
     width: 70%;
@@ -17,12 +18,19 @@ nav {
     flex: 2 1 60px;
     li {
       margin-right: 5%;
+      @media #{$xsDevices} {
+        margin: 4px 0;
+      }
     }
     @media #{$mDevices} {
       margin-top: 3%;
     }
     @media #{$lDevices} {
       margin-top: $fontSize;
+    }
+    @media #{$xsDevices} {
+      display: none;
+      flex-direction: column;
     }
   }
   a {
@@ -31,6 +39,7 @@ nav {
       color: $mainColor;
     }
   }
+
   .logo {
     @include logo;
     @media #{$sDevices} {
